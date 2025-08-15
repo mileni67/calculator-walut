@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    background-color: #eee;
+
+    display: flex;
+    justify-content: center;
+    /* горизонтально */
+    align-items: center;
+    /* вертикально */
+
+    height: 100vh;
+    /* займати всю висоту вікна */
+    text-align: center;
+}
+
+.converter {
+    border: solid 1px;
+    padding: 16px;
+    background-color: rgb(69, 199, 156);
+    max-width: 500px;
+}

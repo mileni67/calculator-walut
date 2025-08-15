@@ -4,22 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator walut</title>
+    <title>currency-converter</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <h1>Конвектор валют</h1>
+<body class="page">
 
-    <input type="number" id="amount" placeholder="Сума" step="0.01">
+    <div class="converter">
+        <p class="legend">currency-converter</p>
+        <input type="number" id="amount" placeholder="Amount" step="0.01">
 
-    <select id="from"></select>
-    <select id="to"></select>
+        <select id="from"></select>
+        <select id="to"></select>
 
-    <button id="convert">Обчислити</button>
+        <button id="convert">Calculate</button>
 
-    <p>Результат:<span id="result">-</span></p>
-
+        <p>Result: <span id="result">-</span></p>
+    </div>
     <script src="script.js"></script>
 </body>
 
